@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kirei Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a href="#" class="logo">Kirei</a>
+      <ul class="nav-links">
+        <li><a href="#welcome-section" class="nav-link">About Us</a></li>
+        <li><a href="#journey-section" class="nav-link">Works</a></li>
+        <li><a href="#welcome-section" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="search-icon">
+        <img src="Assests/SVG/Search.svg" alt="Search" />
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <img
+        src="Assests/PNG/3D_Stager-HeadIMG.png"
+        alt="Japanese traditional clothing display"
+        class="hero-image"
+      />
+    </div>
+
+    <!-- Welcome Section -->
+    <section id="welcome-section" class="welcome-section">
+      <h1 class="welcome-title">Welcome to Kirei Gallery</h1>
+
+      <div class="welcome-left">
+        <div class="contact-info">
+          <div class="contact-item">hello@kireigallery.com</div>
+          <div class="contact-item">+1 (555) 123 - 4567</div>
+        </div>
+        <div class="social-links">
+          <a href="#facebook">
+            <img src="Assests/SVG/FB.svg" alt="Facebook" class="social-icon" />
+          </a>
+          <a href="#instagram">
+            <img src="Assests/SVG/IG.svg" alt="Instagram" class="social-icon" />
+          </a>
+          <a href="#twister">
+            <img
+              src="Assests/SVG/Twister.svg"
+              alt="Twister"
+              class="social-icon"
+            />
+          </a>
+          <a href="#linkedin">
+            <img
+              src="Assests/SVG/LinkedIn.svg"
+              alt="LinkedIn"
+              class="social-icon"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="welcome-right">
+        <p class="welcome-text">
+          Welcome to Kirei Gallery, a virtual gallery dedicated to celebrating
+          the timeless beauty and cultural significance of traditional Japanese
+          attire. Our mission is to bring the artistry and history of Japan's
+          iconic garments—Kimono, Yukata, and Geta—to life, offering an
+          immersive experience that blends tradition with modern storytelling.
+        </p>
+        <a href="#" class="read-more-btn">Read More</a>
+      </div>
+    </section>
+
+    <section id="journey-section" class="journey-section">
+      <div class="journey-header">
+        <div class="journey-category">Work</div>
+        <h2 class="journey-title">Journey Through Japanese Elegance</h2>
+      </div>
+
+      <!-- Kimono Section -->
+      <div class="category-section">
+        <h3 class="category-title">Kimono</h3>
+
+        <div class="category-content">
+          <div class="info-cards">
+            <div class="info-card">
+              <h4>Overall</h4>
+              <p>
+                The kimono is a traditional Japanese garment deeply tied to
+                cultural heritage, worn for centuries during special occasions.
+              </p>
+              <a
+                href="#"
+                class="read-more-btn"
+                data-section="kimono"
+                data-part="overall"
+                >Read More</a
+              >
+            </div>
+
+            <div class="info-card">
+              <h4>History</h4>
+              <p>
+                The kimono's history dates back to the Heian period, evolving
+                into an intricate garment reflecting social and cultural
+                identity.
+              </p>
+              <a
+                href="#"
+                class="read-more-btn"
+                data-section="kimono"
+                data-part="history"
+                >Read More</a
+              >
+            </div>
+
+            <div class="info-card">
+              <h4>Cultural Meaning</h4>
+              <p>
+                The kimono embodies Japan's rich cultural heritage, symbolizing
+                tradition, elegance, and respect for ceremonial occasions, while
+                its intricate designs reflect societal roles and seasons.
+              </p>
+              <a
+                href="#"
+                class="read-more-btn"
+                data-section="kimono"
+                data-part="material"
+                >Read More</a
+              >
+            </div>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="main-image">
+              <model-viewer
+                class="model-viewer"
+                src="Assests/PNG/Kimono/KimonoAero.glb"
+                alt="A 3D model of a Kimono"
+                ar
+                auto-rotate
+                camera-controls
+              ></model-viewer>
+            </div>
+            <div class="small-images">
+              <div class="small-image">
+                <img
+                  src="Assests/PNG/Kimono/Kimono_2-Camera.png"
+                  alt="Kimono detail 1"
+                  data-caption="Kimono detail 1 description"
+                />
+              </div>
+              <div class="small-image">
+                <img
+                  src="Assests/PNG/Kimono/Kimono_3-Camera.png"
+                  alt="Kimono detail 2"
+                />
+              </div>
+              <div class="small-image">
+                <img
+                  src="Assests/PNG/Kimono/Kimono_4-Camera.png"
+                  alt="Kimono detail 3"
+                />
+              </div>
+              <div class="small-image">
+                <img
+                  src="Assests/PNG/Kimono/Kimono QR Code.png"
+                  alt="Kimono detail 4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yukata Section -->
+      <div class="category-section">
+        <h3 class="category-title">Yukata</h3>
+
+        <div class="category-content">
+          <div class="info-cards">
+            <div class="info-card">
+              <h4>Overall</h4>
+              <p>
+                The yukata is a lightweight cotton garment, ideal for summer
+                festivals and Japan’s traditional onsen culture.
+              </p>
+              <a
+                href="#"
+                class="read-more-btn"
+                data-section="yukata"
+                data-part="overall"
+                >Read More</a
+              >
+            </div>
+
+            <div class="info-card">
+              <h4>History</h4>
+              <p>
+                Yukata originated in the Heian period as post-bath robes and
+                evolved into casual wear for Japan's humid summers
+              </p>
+              <a
+                href="#"
+                class="read-more-btn"
+                data-section="yukata"
+                data-part="history"
+                >Read More</a
+              >
+            </div>
+
+            <div class="info-card">
+              <h4>Cultural Meaning</h4>
+              <p>
+                Symbolizing leisure and simplicity, yukata are closely
+                associated with summer festivals and traditional aesthetics.
+              </p>
+              <a
+                href="#"
+                class="read-more-btn"
+                data-section="yukata"
+                data-part="cultural"
+                >Read More</a
+              >
+            </div>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="main-image">
+              <model-viewer
+                class="model-viewer"
+                src="Assests/PNG/Yukata/Yukata.glb"
+                alt="A 3D model of a Kimono"
+                ar
+                auto-rotate
+                camera-controls
+              ></model-viewer>
+            </div>
+            <div class="small-images">
+              <div class="small-image">
+                <img
+                  src="Assests/PNG/Yukata/Yukata_2-Camera.png"
+                  alt="Yukata detail 1"
+                />
+              </div>
+              <div class="small-image">
+                <img
+                  src="Assests/PNG/Yukata/Yukata_3-Camera.png"
+                  alt="Yukata detail 2"
+                />
+              </div>
+              <div class="small-image">
+                <img
+                  src="Assests/PNG/Yukata/Yukata_4-Camera.png"
+                  alt="Yukata detail 3"
+                />
+              </div>
+              <div class="small-image">
+                <img
+                  src="Assests/PNG/Yukata/Yukata QR Code.png"
+                  alt="Yukata detail 4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Geta Section -->
+      <div class="category-section">
+        <h3 class="category-title">Geta</h3>
+
+        <div class="category-content">
+          <div class="info-cards">
+            <div class="info-card">
+              <h4>Overall</h4>
+              <p>
+                Geta are traditional Japanese wooden sandals, originally
+                designed to keep kimono clean and offer practicality in muddy
+                conditions.
+              </p>
+              <a
+                href="#"
+                class="read-more-btn"
+                data-section="geta"
+                data-part="overall"
+                >Read More</a
+              >
+            </div>
+
+            <div class="info-card">
+              <h4>History</h4>
+              <p>
+                Geta's history spans from their origins in China to their
+                evolution into symbolic Japanese footwear worn during festivals.
+              </p>
+              <a
+                href="#"
+                class="read-more-btn"
+                data-section="geta"
+                data-part="history"
+                >Read More</a
+              >
+            </div>
+
+            <div class="info-card">
+              <h4>Cultural Meaning</h4>
+              <p>
+                The rhythmic click-clack of geta on pavement evokes a nostalgic
+                connection to Japanese summer festivals and traditional attire.
+              </p>
+              <a
+                href="#"
+                class="read-more-btn"
+                data-section="geta"
+                data-part="cultural"
+                >Read More</a
+              >
+            </div>
+          </div>
+
+          <div class="gallery-grid">
+            <div class="main-image">
+              <model-viewer
+                class="model-viewer"
+                src="Assests/PNG/Geta/geta.glb"
+                alt="A 3D model of a Kimono"
+                ar
+                auto-rotate
+                camera-controls
+              ></model-viewer>
+            </div>
+            <div class="small-images">
+              <div class="small-image">
+                <img
+                  src="Assests/PNG/Geta/Geta_2-Camera.png"
+                  alt="Geta detail 1"
+                />
+              </div>
+              <div class="small-image">
+                <img
+                  src="Assests/PNG/Geta/Geta_3-Camera.png"
+                  alt="Geta detail 2"
+                />
+              </div>
+              <div class="small-image">
+                <img
+                  src="Assests/PNG/Geta/Geta_4-Camera.png"
+                  alt="Geta detail 3"
+                />
+              </div>
+              <div class="small-image">
+                <img
+                  src="Assests/PNG/Geta/Geta QR Code.png"
+                  alt="Geta detail 4"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Section and Footer -->
+
+    <section class="final-section">
+      <div class="thank-you-message">
+        <h2>
+          Thank you for exploring<br />the beauty of Japanese<br />tradition
+          with us.
+        </h2>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-left">
+            <a href="#" class="footer-logo">Kirei</a>
+            <div class="designer-credit">Designed by Khang Nguyen</div>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>Features</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3>Features</h3>
+              <ul>
+                <li><a href="#">Get Started</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h3>Social Media</h3>
+              <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <div id="overlay" class="overlay hidden">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <div id="overlay-inner-content"></div>
+      </div>
+    </div>
+
+    <script>
+      // Add scroll effect for navbar
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
+        } else {
+          navbar.style.boxShadow = "none";
+        }
+      });
+
+      // Mobile menu toggle
+      const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener("click", () => {
+          navLinks.style.display =
+            navLinks.style.display === "flex" ? "none" : "flex";
+        });
+      }
+
+      // Intersection Observer for fade-in effect
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "translateY(0)";
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+        }
+      );
+
+      // Apply fade-in effect to category sections
+      document.querySelectorAll(".category-section").forEach((section) => {
+        section.style.opacity = "0";
+        section.style.transform = "translateY(20px)";
+        section.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        observer.observe(section);
+      });
+
+      // Define content for each section and part
+      const contentMap = {
+        kimono: {
+          overall: `
+      <h2>Kimono Overall</h2>
+      <p><strong>Definition and History:</strong> The term "Kimono" translates to "thing to wear," and has been the basic garment in Japan for centuries. Early kimono (Kosode) were simple, evolving into more complex forms during the Heian period (794-1185).</p>
+      <p>Various historical developments, like the Edo period's emphasis on merchant culture, influenced kimono design and usage. Modern kimono are reserved for special occasions like weddings, festivals, tea ceremonies, and formal gatherings.</p>
+      <h3>Types and Designs</h3>
+      <ul>
+        <li><strong>Furisode:</strong> Long-sleeved kimono worn by unmarried women.</li>
+        <li><strong>Tomesode:</strong> Formal kimono for married women.</li>
+        <li><strong>Houmongi:</strong> Semi-formal kimono suitable for various events.</li>
+      </ul>
+      <p>The choice of fabric, color, pattern, and accessories plays a crucial role in conveying meaning and formality.</p>
+      <h3>Footwear</h3>
+      <p><strong>Zori:</strong> Formal sandals with flat soles, typically worn with kimono. They can be made from various materials and are often decorated to match the kimono.</p>
+    `,
+          history: `
+      <h2>Kimono History</h2>
+      <p>The kimono has evolved through various historical periods:</p>
+      <ul>
+        <li><strong>Nara Period (710-794 AD):</strong> Early kimono referred to all types of clothing.</li>
+        <li><strong>Heian Period (794-1185 AD):</strong> The straight-line-cut method was developed, making kimono easier to create and wear.</li>
+        <li><strong>Edo Period (1603-1867 AD):</strong> Kimono became more intricate and symbolic, with patterns reflecting the wearer's domain and status.</li>
+        <li><strong>Meiji Period (1868-1912 AD):</strong> Western clothing was encouraged, but kimono remained significant for formal occasions.</li>
+      </ul>
+      <p>Today, kimono symbolize Japan's cultural heritage and are treasured for special events like weddings and ceremonies.</p>
+    `,
+          material: `
+      <h2>Kimono Cultural Meaning</h2>
+      <p>Historically, kimono designs and colors reflected social status, political affiliations, and even the seasons. The montsuki kimono, featuring family crests, became mandatory formal wear during the Meiji period. While no longer worn daily, kimono remain a symbol of tradition and cultural identity.</p>
+    `,
+        },
+        yukata: {
+          overall: `
+      <h2>Yukata Overall</h2>
+      <p><strong>Definition and History:</strong> Yukata are lightweight, informal cotton robes primarily worn during summer festivals and at onsen (hot springs). They originated as bathrobes during the Heian period and gradually became popular for casual wear.</p>
+      <h3>Key Features</h3>
+      <p>Yukata are distinguished by their simpler construction, single layer of fabric, and lack of lining. Typically made of cotton, they are cooler and easier to care for than silk kimono.</p>
+      <h3>Occasions for Wearing</h3>
+      <p>Yukata are commonly worn to summer festivals, fireworks displays, bon-odori dances, and traditional accommodations like ryokan. Increasingly, they are seen as fashionable everyday wear during warm months.</p>
+      <h3>Footwear</h3>
+      <p><strong>Geta:</strong> Traditional wooden sandals often worn with yukata. They feature elevated wooden soles and fabric straps, adding to the overall aesthetic appeal.</p>
+    `,
+          history: `
+      <h2>Yukata History</h2>
+      <p>Yukata originated during the Heian period (794–1185) as "yukatabira," light, simple garments used after bathing in onsen (hot springs). By the Edo period (1603–1868), Yukata became popular as casual wear for Japan's humid summers. Their practicality, combined with cultural aesthetics, solidified their role in Japanese society. Today, Yukata symbolize summer festivals and traditional Japanese leisure.</p>
+    `,
+          cultural: `
+      <h2>Yukata Cultural Meaning</h2>
+      <p>The yukata evokes a sense of relaxation and leisure, linking it to Japan's onsen culture. It is a popular choice for summer festivals, representing a connection to summer festivities and Japanese aesthetics. People often select yukata designs based on personal taste or seasonal themes, demonstrating an appreciation for nature's transitions.</p>
+    `,
+        },
+        geta: {
+          overall: `
+      <h2>Geta Overall</h2>
+      <p><strong>Definition:</strong> Geta are a type of traditional Japanese footwear resembling clogs or flip-flops. They feature a raised wooden base with two "teeth" or pegs on the bottom and a thong called a hanao that goes between the toes.</p>
+      <p>Originally designed for practicality, geta kept traditional clothing above the ground, especially in muddy or snowy conditions. They are often worn with traditional Japanese clothing like kimono and yukata.</p>
+      <h3>Types of Geta</h3>
+      <ul>
+        <li><strong>Koma-Geta:</strong> Two-teeth geta made from lightweight wood.</li>
+        <li><strong>Senryou-Geta:</strong> Geta with a sloped front tooth for easier walking.</li>
+        <li><strong>Ukon-Geta:</strong> Lower-profile geta with a larger sole.</li>
+      </ul>
+    `,
+          history: `
+      <h2>Geta History</h2>
+      <ul>
+        <li><strong>Ming to Qing Dynasties (1368-1912 AD):</strong> Geta likely originated in Southern China and were exported to Japan.</li>
+        <li><strong>Edo Period:</strong> Geisha wore triple-pronged lacquered geta, and sushi merchants used them to avoid fish scraps.</li>
+        <li><strong>19th Century:</strong> Ornate carvings indicated higher social status.</li>
+      </ul>
+      <p>Today, koma-geta are common during summer festivals, preserving the craft and tradition of handmade geta.</p>
+    `,
+          cultural: `
+      <h2>Geta Cultural Meaning</h2>
+      <p>Geta serve both practical and cultural purposes. Historically, their elevated design kept kimono clean and allowed for easy on and off. The click-clack sound of geta on pavement is a characteristic sound of Japanese summer, particularly at festivals, symbolizing tradition and festivity.</p>
+    `,
+        },
+      };
+
+      // Utility function to show overlay
+      const showOverlay = (content) => {
+        const overlay = document.getElementById("overlay");
+        const overlayContent = document.getElementById("overlay-inner-content");
+        overlayContent.innerHTML = content; // Populate overlay with content
+        overlay.classList.remove("hidden"); // Show overlay
+      };
+
+      // Utility function to hide overlay
+      const hideOverlay = () => {
+        const overlay = document.getElementById("overlay");
+        overlay.classList.add("hidden"); // Hide overlay
+      };
+
+      // Add event listeners when DOM is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        // Close overlay on close button or background click
+        const closeBtn = document.querySelector(".close-btn");
+        const overlay = document.getElementById("overlay");
+
+        closeBtn.addEventListener("click", hideOverlay);
+        overlay.addEventListener("click", (e) => {
+          if (e.target === overlay) hideOverlay();
+        });
+
+        // Event delegation for all "Read More" buttons
+        document.body.addEventListener("click", (e) => {
+          if (e.target.classList.contains("read-more-btn")) {
+            e.preventDefault(); // Prevent default link behavior
+
+            const section = e.target.getAttribute("data-section"); // Get section, e.g., "kimono"
+            const part = e.target.getAttribute("data-part"); // Get part, e.g., "overall"
+            const content = contentMap[section]?.[part]; // Fetch content from map
+
+            if (content) {
+              showOverlay(content); // Display content in overlay
+            } else {
+              console.error(
+                `Content not found for section: ${section}, part: ${part}`
+              );
+            }
+          }
+        });
+
+        // Event listener for small images
+        document.querySelectorAll(".small-image img").forEach((img) => {
+          img.addEventListener("click", () => {
+            const caption = img.getAttribute("data-caption") || "Image"; // Use caption or fallback
+            showOverlay(`
+        <div>
+          <img src="${img.src}" alt="${img.alt}" style="max-width: 100%;"/>
+          <p>${caption}</p>
+        </div>
+      `);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
